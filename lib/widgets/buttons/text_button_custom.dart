@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:personal_website/styles/colors.dart';
 import 'package:personal_website/styles/styles.dart';
 
@@ -33,14 +32,9 @@ class _TextButtonCustomState extends State<TextButtonCustom> {
           }
         });
       },
-      style: TextButton.styleFrom(
-        padding: EdgeInsets.zero,
-        minimumSize: Size(18.h, 18.h),
-        primary: Colors.transparent,
-        backgroundColor: Colors.transparent,
-        onSurface: Colors.transparent,
-        shadowColor: Colors.transparent,
-        surfaceTintColor: Colors.transparent,
+      style: ButtonStyle(
+        padding: MaterialStateProperty.all(EdgeInsets.zero),
+        overlayColor: MaterialStateProperty.all(Colors.transparent),
       ),
       child: Text(
         widget.label,
