@@ -24,7 +24,7 @@ class _AppBarCustomState extends State<AppBarCustom> {
     return AppBar(
       backgroundColor: Colors.transparent,
       shadowColor: Colors.transparent,
-      leadingWidth: 125.h,
+      leadingWidth: 110.h,
       toolbarHeight: kToolbarHeight * 2,
       leading: Container(
         margin: EdgeInsets.only(left: 40.h),
@@ -35,7 +35,7 @@ class _AppBarCustomState extends State<AppBarCustom> {
           shape: BoxShape.circle,
         ),
       ),
-      actions: MediaQuery.of(context).size.width < 960.h
+      actions: MediaQuery.of(context).size.width < 960
           ? [
               IconButton(
                 onPressed: () {
