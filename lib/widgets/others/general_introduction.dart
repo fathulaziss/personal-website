@@ -12,7 +12,7 @@ class GeneralIntroduction extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        verticalSpace(MediaQuery.of(context).size.height / 6),
+        verticalSpace(MediaQuery.of(context).size.height / 5),
         Text(
           'Hi, my name is',
           style: TextStyles.firaCodeText.copyWith(fontSize: 20.h),

@@ -12,7 +12,7 @@ class AppBarCustom extends StatefulWidget implements PreferredSizeWidget {
   const AppBarCustom({Key? key}) : super(key: key);
 
   @override
-  final Size preferredSize = const Size.fromHeight(kToolbarHeight * 2);
+  final Size preferredSize = const Size.fromHeight(kToolbarHeight * 1.5);
 
   @override
   State<AppBarCustom> createState() => _AppBarCustomState();
@@ -24,8 +24,8 @@ class _AppBarCustomState extends State<AppBarCustom> {
     return AppBar(
       backgroundColor: Colors.transparent,
       shadowColor: Colors.transparent,
-      leadingWidth: 110.h,
-      toolbarHeight: kToolbarHeight * 2,
+      leadingWidth: 100.h,
+      toolbarHeight: kToolbarHeight * 1.5,
       leading: Container(
         margin: EdgeInsets.only(left: 40.h),
         decoration: BoxDecoration(

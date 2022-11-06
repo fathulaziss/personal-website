@@ -1,0 +1,4 @@
+const String about =
+    "Hello! My name is Azis and I enjoy creating things that live on internet. My Interest in web development started back in 2012 when I decided to try editing custom Tumblr themes -- turns out hacking together a custom reblog button though me a lot about HTML & CSS!\n\nFast-forward to today, and I've had the previlege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accesible, inclusive products and digital experience at Upstatement for a variety of clients.\n\nI also recently launched a course that covers everything you need to build a web app with the Spotify API using Node & React.\n\nHere are a few technologies I've been working with recently :";
+
+const List listTechnologies = ['Flutter', 'Firebase', 'REST-API', 'Figma'];

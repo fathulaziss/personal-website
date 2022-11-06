@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:personal_website/styles/colors.dart';
+import 'package:personal_website/styles/styles.dart';
+import 'package:personal_website/widgets/others/about.dart';
 import 'package:personal_website/widgets/others/appbar_custom.dart';
 import 'package:personal_website/widgets/others/drawer_custom.dart';
 import 'package:personal_website/widgets/others/general_introduction.dart';
@@ -22,11 +24,8 @@ class HomeView extends StatelessWidget {
           child: Column(
             children: [
               const GeneralIntroduction(),
-              Container(
-                width: double.infinity,
-                height: 50.h,
-                color: Colors.amber,
-              )
+              const About(),
+              verticalSpace(10.h)
             ],
           ),
         ),
