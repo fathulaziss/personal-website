@@ -7,17 +7,25 @@ class TextButtonCustom extends StatefulWidget {
     Key? key,
     required this.label,
     required this.onPressed,
+    this.isUseOverlayColor = false,
+    this.padding,
+    this.textColor = AppColor.textColor1,
   }) : super(key: key);
 
   final String label;
   final Function() onPressed;
+  final bool isUseOverlayColor;
+  final EdgeInsets? padding;
+  final Color textColor;
 
   @override
   State<TextButtonCustom> createState() => _TextButtonCustomState();
 }
 
 class _TextButtonCustomState extends State<TextButtonCustom> {
-  Color color = AppColor.textColor1;
+  Color hoverColor = AppColor.textColor1;
+  bool isHover = false;
+  MaterialStateProperty<Color>? overlayColor;
 
   @override
   Widget build(BuildContext context) {
@@ -26,19 +34,24 @@ class _TextButtonCustomState extends State<TextButtonCustom> {
       onHover: (value) {
         setState(() {
           if (value == true) {
-            color = AppColor.primaryColor;
+            isHover = true;
+            hoverColor = AppColor.primaryColor;
           } else {
-            color = AppColor.textColor1;
+            isHover = false;
+            hoverColor = AppColor.textColor1;
           }
         });
       },
       style: ButtonStyle(
-        padding: MaterialStateProperty.all(EdgeInsets.zero),
-        overlayColor: MaterialStateProperty.all(Colors.transparent),
+        padding: MaterialStateProperty.all(widget.padding ?? EdgeInsets.zero),
+        overlayColor: widget.isUseOverlayColor
+            ? overlayColor
+            : MaterialStateProperty.all(Colors.transparent),
       ),
       child: Text(
         widget.label,
-        style: TextStyles.firaCodeText.copyWith(color: color),
+        style: TextStyles.firaCodeText
+            .copyWith(color: isHover ? hoverColor : widget.textColor),
       ),
     );
   }

@@ -17,6 +17,7 @@ class About extends StatelessWidget {
           : EdgeInsets.symmetric(horizontal: 100.h),
       child: Column(
         children: [
+          verticalSpace(MediaQuery.of(context).size.height / 10),
           Row(
             children: [
               Text(
@@ -56,10 +57,10 @@ class About extends StatelessWidget {
               physics: const NeverScrollableScrollPhysics(),
               padding: EdgeInsets.zero,
               shrinkWrap: true,
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
-                childAspectRatio: 10,
-                crossAxisSpacing: 20,
+                childAspectRatio: 10.h,
+                crossAxisSpacing: 20.h,
               ),
               itemCount: listTechnologies.length,
               itemBuilder: (context, index) {
@@ -72,10 +73,12 @@ class About extends StatelessWidget {
                         size: 20.h,
                       ),
                       horizontalSpace(15.h),
-                      Text(
-                        listTechnologies[index],
-                        style: TextStyles.firaCodeText
-                            .copyWith(color: AppColor.textColor2),
+                      Expanded(
+                        child: Text(
+                          listTechnologies[index],
+                          style: TextStyles.firaCodeText
+                              .copyWith(color: AppColor.textColor2),
+                        ),
                       ),
                     ],
                   ),

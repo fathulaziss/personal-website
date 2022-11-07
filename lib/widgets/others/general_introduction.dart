@@ -50,9 +50,9 @@ class GeneralIntroduction extends StatelessWidget {
         verticalSpace(40.h),
         Padding(
           padding: EdgeInsets.only(
-            right: MediaQuery.of(context).size.width < 960
+            right: MediaQuery.of(context).size.width < 1000
                 ? MediaQuery.of(context).size.width / 2
-                : MediaQuery.of(context).size.width / 1.4,
+                : MediaQuery.of(context).size.width / 1.7,
           ),
           child: ButtonPrimary(
             height: 60.h,

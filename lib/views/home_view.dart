@@ -5,6 +5,7 @@ import 'package:personal_website/styles/styles.dart';
 import 'package:personal_website/widgets/others/about.dart';
 import 'package:personal_website/widgets/others/appbar_custom.dart';
 import 'package:personal_website/widgets/others/drawer_custom.dart';
+import 'package:personal_website/widgets/others/experience.dart';
 import 'package:personal_website/widgets/others/general_introduction.dart';
 
 class HomeView extends StatelessWidget {
@@ -19,12 +20,13 @@ class HomeView extends StatelessWidget {
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.symmetric(
-            horizontal: MediaQuery.of(context).size.width < 960 ? 50.h : 150.h,
+            horizontal: MediaQuery.of(context).size.width < 960 ? 50.h : 250.h,
           ),
           child: Column(
             children: [
               const GeneralIntroduction(),
               const About(),
+              const Experience(),
               verticalSpace(10.h)
             ],
           ),
