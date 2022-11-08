@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:personal_website/data/data.dart';
 import 'package:personal_website/styles/colors.dart';
 import 'package:personal_website/styles/styles.dart';
 import 'package:personal_website/widgets/buttons/text_button_custom.dart';
@@ -25,6 +26,7 @@ class _ExperienceDetailOneState extends State<ExperienceDetailOne> {
             width: 200.h,
             child: ListView.separated(
               physics: const NeverScrollableScrollPhysics(),
+              itemCount: listExperience.length,
               itemBuilder: (context, index) {
                 return Row(
                   children: [
@@ -52,7 +54,7 @@ class _ExperienceDetailOneState extends State<ExperienceDetailOne> {
                               selectedIndex = index;
                             });
                           },
-                          label: 'PT. Ihsan Solusi Informatika Terpadu',
+                          label: listExperience[index].companyName,
                           isUseOverlayColor: true,
                           padding: EdgeInsets.symmetric(
                             vertical: 20.h,
@@ -70,7 +72,6 @@ class _ExperienceDetailOneState extends State<ExperienceDetailOne> {
               separatorBuilder: (context, index) {
                 return const SizedBox();
               },
-              itemCount: 10,
             ),
           ),
           Expanded(
@@ -82,13 +83,13 @@ class _ExperienceDetailOneState extends State<ExperienceDetailOne> {
                 children: [
                   verticalSpace(20.h),
                   Text(
-                    'Mobile Application Developer @ PT. Ihsan Solusi Informatika',
+                    '${listExperience[selectedIndex].position} @ ${listExperience[selectedIndex].companyName}',
                     style: TextStyles.heeboText
                         .copyWith(fontSize: 22.h, color: AppColor.textColor1),
                   ),
                   verticalSpace(5.h),
                   Text(
-                    'May 2018 - Present',
+                    listExperience[selectedIndex].duration,
                     style: TextStyles.firaCodeText
                         .copyWith(fontSize: 20.h, color: AppColor.textColor2),
                   ),
@@ -97,10 +98,11 @@ class _ExperienceDetailOneState extends State<ExperienceDetailOne> {
                     child: ListView.builder(
                       padding: EdgeInsets.zero,
                       // physics: const NeverScrollableScrollPhysics(),
-                      itemCount: 3,
+                      itemCount:
+                          listExperience[selectedIndex].experiences.length,
                       itemBuilder: (context, index) {
                         return Padding(
-                          padding: EdgeInsets.only(bottom: 30.h),
+                          padding: EdgeInsets.only(bottom: 15.h),
                           child: Row(
                             children: [
                               Icon(
@@ -111,7 +113,8 @@ class _ExperienceDetailOneState extends State<ExperienceDetailOne> {
                               horizontalSpace(15.h),
                               Expanded(
                                 child: Text(
-                                  'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify',
+                                  listExperience[selectedIndex]
+                                      .experiences[index],
                                   style: TextStyles.heeboText.copyWith(
                                     fontSize: 20.h,
                                     color: AppColor.textColor2,
