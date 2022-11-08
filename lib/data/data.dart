@@ -15,6 +15,6 @@ const List<ExperienceModel> listExperience = [
       'Write, maintainable code with implemented clean architecture in every project, and also supervisioned by senior engineer to write good code.',
       'Communicate with multi-disciplinary teams of engineers, designers, project managers, and clients on a daily basis.',
     ],
-    position: 'Mobile App Developer',
+    position: 'Mobile Application Developer',
   )
 ];

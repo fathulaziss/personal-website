@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:personal_website/styles/colors.dart';
 import 'package:personal_website/styles/styles.dart';
-import 'package:personal_website/widgets/others/experience_detail_one.dart';
+import 'package:personal_website/widgets/others/experience_detail.dart';
 
 class Experience extends StatelessWidget {
   const Experience({Key? key}) : super(key: key);
@@ -42,7 +42,7 @@ class Experience extends StatelessWidget {
             ],
           ),
           verticalSpace(40.h),
-          const ExperienceDetailOne(),
+          const ExperienceDetail(),
           verticalSpace(MediaQuery.of(context).size.height / 6),
         ],
       ),
