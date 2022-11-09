@@ -19,7 +19,7 @@ class _ExperienceDetailState extends State<ExperienceDetail> {
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
-      height: 500.h,
+      height: 400.h,
       child: Row(
         children: [
           SizedBox(
