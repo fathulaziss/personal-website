@@ -22,7 +22,7 @@ const List<ProjectModel> listProject = [
     companyLink: 'https://ihsansolusi.co.id/m/#home',
     companyName: 'PT. Ihsan Solusi Informatika',
     projectDesc:
-        'Building a E-Wallet Application to provide financial services by PT. Pos Indonesia.',
+        'Building a E-Wallet Application to provide financial services with Flutter for Android and iOS.',
     projectLink: {
       'playstore':
           'https://play.google.com/store/apps/details?id=com.posindonesia.giropos',
@@ -35,7 +35,7 @@ const List<ProjectModel> listProject = [
     companyLink: 'https://ihsansolusi.co.id/m/#home',
     companyName: 'PT. Ihsan Solusi Informatika',
     projectDesc:
-        'Building a Mobile Banking Application to provide financial services by PT. Bank Mega Syariah.',
+        'Building a Mobile Banking Application to provide financial services with Flutter for Android and iOS.',
     projectLink: {
       'playstore':
           'https://play.google.com/store/apps/details?id=com.megasyariah',
@@ -48,7 +48,7 @@ const List<ProjectModel> listProject = [
     companyLink: 'https://ihsansolusi.co.id/m/#home',
     companyName: 'PT. Ihsan Solusi Informatika',
     projectDesc:
-        'Building a Mobile Banking Application to provide financial services by PT. Bank Jabar Banten Syariah.',
+        'Building a Mobile Banking Application to provide financial services with Flutter for Android and iOS.',
     projectLink: {
       'playstore':
           'https://play.google.com/store/apps/details?id=com.mobilemaslahah',
@@ -61,7 +61,7 @@ const List<ProjectModel> listProject = [
     companyLink: 'https://ihsansolusi.co.id/m/#home',
     companyName: 'PT. Ihsan Solusi Informatika',
     projectDesc:
-        'Building a E-Wallet Application to provide financial services by PT. Asia Pelangi Remiten.',
+        'Building a E-Wallet Application to provide financial services with Flutter for Android and iOS.',
     projectLink: {
       'playstore':
           'https://play.google.com/store/apps/details?id=com.asiapelangi.autopay.wallet',
@@ -77,7 +77,7 @@ const List<ProjectModel> listProjectOther = [
     companyLink: 'https://ihsansolusi.co.id/m/#home',
     companyName: 'PT. Ihsan Solusi Informatika',
     projectDesc:
-        'Building a E-Wallet Application to provide financial services by PT. Pos Indonesia.',
+        'Building a E-Wallet Application to provide financial services with Flutter for Android and iOS.',
     projectLink: {
       'playstore':
           'https://play.google.com/store/apps/details?id=com.posindonesia.giropos',
@@ -90,7 +90,7 @@ const List<ProjectModel> listProjectOther = [
     companyLink: 'https://ihsansolusi.co.id/m/#home',
     companyName: 'PT. Ihsan Solusi Informatika',
     projectDesc:
-        'Building a Mobile Banking Application to provide financial services by PT. Bank Mega Syariah.',
+        'Building a Mobile Banking Application to provide financial services with Flutter for Android and iOS.',
     projectLink: {
       'playstore':
           'https://play.google.com/store/apps/details?id=com.megasyariah',
@@ -103,7 +103,7 @@ const List<ProjectModel> listProjectOther = [
     companyLink: 'https://ihsansolusi.co.id/m/#home',
     companyName: 'PT. Ihsan Solusi Informatika',
     projectDesc:
-        'Building a Mobile Banking Application to provide financial services by PT. Bank Jabar Banten Syariah.',
+        'Building a Mobile Banking Application to provide financial services with Flutter for Android and iOS.',
     projectLink: {
       'playstore':
           'https://play.google.com/store/apps/details?id=com.mobilemaslahah',
@@ -116,7 +116,7 @@ const List<ProjectModel> listProjectOther = [
     companyLink: 'https://ihsansolusi.co.id/m/#home',
     companyName: 'PT. Ihsan Solusi Informatika',
     projectDesc:
-        'Building a E-Wallet Application to provide financial services by PT. Asia Pelangi Remiten.',
+        'Building a E-Wallet Application to provide financial services with Flutter for Android and iOS.',
     projectLink: {
       'playstore':
           'https://play.google.com/store/apps/details?id=com.asiapelangi.autopay.wallet',
