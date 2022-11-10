@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:personal_website/styles/colors.dart';
 import 'package:personal_website/styles/styles.dart';
+import 'package:personal_website/widgets/buttons/floating_left_button.dart';
+import 'package:personal_website/widgets/buttons/floating_right_button.dart';
 import 'package:personal_website/widgets/others/about.dart';
 import 'package:personal_website/widgets/others/appbar_custom.dart';
 import 'package:personal_website/widgets/others/drawer_custom.dart';
@@ -19,22 +21,35 @@ class HomeView extends StatelessWidget {
       backgroundColor: AppColor.backgroundColor,
       endDrawer: const DrawerCustom(),
       appBar: const AppBarCustom(),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: MediaQuery.of(context).size.width < 960 ? 50.h : 250.h,
+      body: Stack(
+        children: [
+          SingleChildScrollView(
+            child: Padding(
+              padding: EdgeInsets.symmetric(
+                horizontal:
+                    MediaQuery.of(context).size.width < 960 ? 50.h : 250.h,
+              ),
+              child: Column(
+                children: [
+                  const GeneralIntroduction(),
+                  const About(),
+                  const Experience(),
+                  const Project(),
+                  const ProjectOther(),
+                  verticalSpace(10.h)
+                ],
+              ),
+            ),
           ),
-          child: Column(
-            children: [
-              const GeneralIntroduction(),
-              const About(),
-              const Experience(),
-              const Project(),
-              const ProjectOther(),
-              verticalSpace(10.h)
-            ],
-          ),
-        ),
+          if (MediaQuery.of(context).size.width < 960)
+            const SizedBox()
+          else
+            const FloatingLeftButton(),
+          if (MediaQuery.of(context).size.width < 960)
+            const SizedBox()
+          else
+            const FloatingRightButton(),
+        ],
       ),
     );
   }
