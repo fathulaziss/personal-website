@@ -48,7 +48,6 @@ class About extends StatelessWidget {
             const AboutDetailTwo()
           else
             const AboutDetailOne(),
-          verticalSpace(10.h),
           Padding(
             padding: MediaQuery.of(context).size.width < 960
                 ? EdgeInsets.zero
