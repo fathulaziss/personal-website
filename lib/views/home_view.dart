@@ -8,6 +8,7 @@ import 'package:personal_website/widgets/others/drawer_custom.dart';
 import 'package:personal_website/widgets/others/experience.dart';
 import 'package:personal_website/widgets/others/general_introduction.dart';
 import 'package:personal_website/widgets/others/project.dart';
+import 'package:personal_website/widgets/others/project_other.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key? key}) : super(key: key);
@@ -29,6 +30,7 @@ class HomeView extends StatelessWidget {
               const About(),
               const Experience(),
               const Project(),
+              const ProjectOther(),
               verticalSpace(10.h)
             ],
           ),

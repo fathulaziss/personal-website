@@ -15,12 +15,14 @@ class ProjectItem extends StatefulWidget {
     this.isShowAppStore = true,
     this.isShowGithub = false,
     this.isShowPlaystore = true,
+    this.isShowAssociated = true,
   }) : super(key: key);
 
   final ProjectModel data;
   final bool isShowPlaystore;
   final bool isShowAppStore;
   final bool isShowGithub;
+  final bool isShowAssociated;
 
   @override
   State<ProjectItem> createState() => _ProjectItemState();
@@ -57,6 +59,7 @@ class _ProjectItemState extends State<ProjectItem> {
                       IconButtonCustom(
                         isCustomIcon: true,
                         customIcon: 'ic_playstore.png',
+                        iconSize: 30.h,
                         onPressed: () {
                           AppUtils.openLink(
                             widget.data.projectLink['playstore'],
@@ -69,6 +72,7 @@ class _ProjectItemState extends State<ProjectItem> {
                         child: IconButtonCustom(
                           isCustomIcon: true,
                           customIcon: 'ic_appstore.png',
+                          iconSize: 30.h,
                           onPressed: () {
                             AppUtils.openLink(
                               widget.data.projectLink['appstore'],
@@ -82,7 +86,7 @@ class _ProjectItemState extends State<ProjectItem> {
                         child: IconButtonCustom(
                           isCustomIcon: true,
                           customIcon: 'ic_github.png',
-                          iconSize: 28.h,
+                          iconSize: 30.h,
                           onPressed: () {
                             AppUtils.openLink(
                               widget.data.projectLink['github'],
@@ -109,14 +113,6 @@ class _ProjectItemState extends State<ProjectItem> {
                     ),
                     onPressed: () {},
                   ),
-                  // Text(
-                  //   widget.data.projectTitle,
-                  //   style: TextStyles.heeboText.copyWith(
-                  //     fontSize: 20.h,
-                  //     color: AppColor.textColor1,
-                  //     fontWeight: FontWeight.w600,
-                  //   ),
-                  // ),
                   verticalSpace(20.h),
                   Text(
                     widget.data.projectDesc,
@@ -127,39 +123,42 @@ class _ProjectItemState extends State<ProjectItem> {
               ),
             ),
           ),
-          verticalSpace(20.h),
-          RichText(
-            text: TextSpan(
-              text: 'Associated with ',
-              style:
-                  TextStyles.firaCodeText.copyWith(color: AppColor.textColor1),
-              children: [
-                TextSpan(
-                  recognizer: TapGestureRecognizer()
-                    ..onTap = () {
-                      AppUtils.openLink(widget.data.companyLink);
-                    },
-                  mouseCursor: MaterialStateMouseCursor.clickable,
-                  onEnter: (event) {
-                    setState(() {
-                      decoration = TextDecoration.underline;
-                    });
-                  },
-                  onExit: (event) {
-                    setState(() {
-                      decoration = TextDecoration.none;
-                    });
-                  },
-                  text: widget.data.companyName,
-                  style: TextStyles.firaCodeText.copyWith(
-                    color: AppColor.primaryColor,
-                    decoration: decoration,
-                    decorationColor: AppColor.primaryColor,
-                  ),
+          if (widget.isShowAssociated)
+            Padding(
+              padding: EdgeInsets.only(top: 20.h),
+              child: RichText(
+                text: TextSpan(
+                  text: 'Associated with ',
+                  style: TextStyles.firaCodeText
+                      .copyWith(color: AppColor.textColor1),
+                  children: [
+                    TextSpan(
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () {
+                          AppUtils.openLink(widget.data.companyLink);
+                        },
+                      mouseCursor: MaterialStateMouseCursor.clickable,
+                      onEnter: (event) {
+                        setState(() {
+                          decoration = TextDecoration.underline;
+                        });
+                      },
+                      onExit: (event) {
+                        setState(() {
+                          decoration = TextDecoration.none;
+                        });
+                      },
+                      text: widget.data.companyName,
+                      style: TextStyles.firaCodeText.copyWith(
+                        color: AppColor.primaryColor,
+                        decoration: decoration,
+                        decorationColor: AppColor.primaryColor,
+                      ),
+                    ),
+                  ],
                 ),
-              ],
+              ),
             ),
-          ),
         ],
       ),
     );

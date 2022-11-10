@@ -74,3 +74,58 @@ const List<ProjectModel> listProject = [
     projectTitle: 'ActionPay',
   ),
 ];
+
+const List<ProjectModel> listProjectOther = [
+  ProjectModel(
+    companyLink: 'https://ihsansolusi.co.id/m/#home',
+    companyName: 'PT. Ihsan Solusi Informatika',
+    projectDesc:
+        'Building a E-Wallet Application to provide financial services by PT. Pos Indonesia.',
+    projectLink: {
+      'playstore':
+          'https://play.google.com/store/apps/details?id=com.posindonesia.giropos',
+      'appstore': 'https://apps.apple.com/id/app/pospay/id1542001621',
+      'github': '',
+    },
+    projectTitle: 'Pospay',
+  ),
+  ProjectModel(
+    companyLink: 'https://ihsansolusi.co.id/m/#home',
+    companyName: 'PT. Ihsan Solusi Informatika',
+    projectDesc:
+        'Building a Mobile Banking Application to provide financial services by PT. Bank Mega Syariah.',
+    projectLink: {
+      'playstore':
+          'https://play.google.com/store/apps/details?id=com.megasyariah',
+      'appstore': 'https://apps.apple.com/id/app/m-syariah/id1530760308',
+      'github': '',
+    },
+    projectTitle: 'M-Syariah',
+  ),
+  ProjectModel(
+    companyLink: 'https://ihsansolusi.co.id/m/#home',
+    companyName: 'PT. Ihsan Solusi Informatika',
+    projectDesc:
+        'Building a Mobile Banking Application to provide financial services by PT. Bank Jabar Banten Syariah.',
+    projectLink: {
+      'playstore':
+          'https://play.google.com/store/apps/details?id=com.mobilemaslahah',
+      'appstore': 'https://apps.apple.com/id/app/mobile-maslahah/id1543627726',
+      'github': '',
+    },
+    projectTitle: 'Mobile Maslahah',
+  ),
+  ProjectModel(
+    companyLink: 'https://ihsansolusi.co.id/m/#home',
+    companyName: 'PT. Ihsan Solusi Informatika',
+    projectDesc:
+        'Building a E-Wallet Application to provide financial services by PT. Asia Pelangi Remiten.',
+    projectLink: {
+      'playstore':
+          'https://play.google.com/store/apps/details?id=com.asiapelangi.autopay.wallet',
+      'appstore': 'https://apps.apple.com/id/app/actionpay/id1524738360',
+      'github': '',
+    },
+    projectTitle: 'ActionPay',
+  ),
+];
