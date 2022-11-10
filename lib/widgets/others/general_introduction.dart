@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:personal_website/styles/colors.dart';
 import 'package:personal_website/styles/styles.dart';
 import 'package:personal_website/widgets/buttons/primary_button.dart';
+import 'package:personal_website/widgets/others/general_introduction_desc.dart';
 
 class GeneralIntroduction extends StatelessWidget {
   const GeneralIntroduction({Key? key}) : super(key: key);
@@ -19,7 +20,7 @@ class GeneralIntroduction extends StatelessWidget {
         ),
         verticalSpace(40.h),
         Text(
-          'Muhamad Fathul Azis.',
+          'Muhamad Fathul Azis',
           style: TextStyles.heeboText.copyWith(
             fontSize: MediaQuery.of(context).size.width < 960 ? 40.h : 60.h,
             color: AppColor.textColor1,
@@ -28,7 +29,7 @@ class GeneralIntroduction extends StatelessWidget {
           ),
         ),
         Text(
-          'I build things for the mobile application.',
+          'I build things for the mobile application',
           style: TextStyles.heeboText.copyWith(
             fontSize: MediaQuery.of(context).size.width < 960 ? 40.h : 60.h,
             color: AppColor.textColor2,
@@ -41,11 +42,7 @@ class GeneralIntroduction extends StatelessWidget {
           width: MediaQuery.of(context).size.width < 960
               ? double.infinity
               : MediaQuery.of(context).size.width / 2.8,
-          child: Text(
-            "I'm a software engineer specializing develop mobile application using Flutter. Currently, I'm focused on develop mobile application at PT. Ihsan Solusi Informatika",
-            style: TextStyles.heeboText
-                .copyWith(fontSize: 20.h, color: AppColor.textColor2),
-          ),
+          child: const GeneralIntroductionDesc(),
         ),
         verticalSpace(40.h),
         Padding(
