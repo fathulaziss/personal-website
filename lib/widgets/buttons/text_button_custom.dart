@@ -10,6 +10,7 @@ class TextButtonCustom extends StatefulWidget {
     this.isUseOverlayColor = false,
     this.padding,
     this.textColor = AppColor.textColor1,
+    this.labelTextStyle,
   }) : super(key: key);
 
   final String label;
@@ -17,6 +18,7 @@ class TextButtonCustom extends StatefulWidget {
   final bool isUseOverlayColor;
   final EdgeInsets? padding;
   final Color textColor;
+  final TextStyle? labelTextStyle;
 
   @override
   State<TextButtonCustom> createState() => _TextButtonCustomState();
@@ -50,8 +52,11 @@ class _TextButtonCustomState extends State<TextButtonCustom> {
       ),
       child: Text(
         widget.label,
-        style: TextStyles.firaCodeText
-            .copyWith(color: isHover ? hoverColor : widget.textColor),
+        style: widget.labelTextStyle != null
+            ? widget.labelTextStyle!
+                .copyWith(color: isHover ? hoverColor : widget.textColor)
+            : TextStyles.firaCodeText
+                .copyWith(color: isHover ? hoverColor : widget.textColor),
       ),
     );
   }
