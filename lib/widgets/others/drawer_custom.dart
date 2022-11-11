@@ -6,7 +6,18 @@ import 'package:personal_website/widgets/buttons/primary_button.dart';
 import 'package:personal_website/widgets/buttons/text_button_custom.dart';
 
 class DrawerCustom extends StatelessWidget {
-  const DrawerCustom({Key? key}) : super(key: key);
+  const DrawerCustom({
+    Key? key,
+    required this.onPressedAbout,
+    required this.onPressedContact,
+    required this.onPressedExperience,
+    required this.onPressedWork,
+  }) : super(key: key);
+
+  final Function() onPressedAbout;
+  final Function() onPressedExperience;
+  final Function() onPressedWork;
+  final Function() onPressedContact;
 
   @override
   Widget build(BuildContext context) {
@@ -18,6 +29,7 @@ class DrawerCustom extends StatelessWidget {
           TextButtonCustom(
             label: 'About',
             onPressed: () {
+              onPressedAbout();
               Navigator.pop(context);
             },
           ),
@@ -25,6 +37,7 @@ class DrawerCustom extends StatelessWidget {
           TextButtonCustom(
             label: 'Experience',
             onPressed: () {
+              onPressedExperience();
               Navigator.pop(context);
             },
           ),
@@ -32,6 +45,7 @@ class DrawerCustom extends StatelessWidget {
           TextButtonCustom(
             label: 'Work',
             onPressed: () {
+              onPressedWork();
               Navigator.pop(context);
             },
           ),
@@ -39,6 +53,7 @@ class DrawerCustom extends StatelessWidget {
           TextButtonCustom(
             label: 'Contact',
             onPressed: () {
+              onPressedContact();
               Navigator.pop(context);
             },
           ),

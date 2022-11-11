@@ -12,6 +12,7 @@ class Footer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        verticalSpace(MediaQuery.of(context).size.height / 12),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -60,7 +61,7 @@ class Footer extends StatelessWidget {
           style: TextStyles.firaCodeText.copyWith(color: AppColor.textColor2),
           textAlign: TextAlign.center,
         ),
-        verticalSpace(MediaQuery.of(context).size.height / 6),
+        verticalSpace(40.h),
       ],
     );
   }

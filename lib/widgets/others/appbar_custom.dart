@@ -9,7 +9,18 @@ import 'package:personal_website/widgets/buttons/primary_button.dart';
 import 'package:personal_website/widgets/buttons/text_button_custom.dart';
 
 class AppBarCustom extends StatefulWidget implements PreferredSizeWidget {
-  const AppBarCustom({Key? key}) : super(key: key);
+  const AppBarCustom({
+    Key? key,
+    required this.onPressedAbout,
+    required this.onPressedContact,
+    required this.onPressedExperience,
+    required this.onPressedWork,
+  }) : super(key: key);
+
+  final Function() onPressedAbout;
+  final Function() onPressedExperience;
+  final Function() onPressedWork;
+  final Function() onPressedContact;
 
   @override
   final Size preferredSize = const Size.fromHeight(kToolbarHeight * 1.5);
@@ -52,22 +63,22 @@ class _AppBarCustomState extends State<AppBarCustom> {
           : [
               TextButtonCustom(
                 label: 'About',
-                onPressed: () {},
+                onPressed: widget.onPressedAbout,
               ),
               horizontalSpace(40.h),
               TextButtonCustom(
                 label: 'Experience',
-                onPressed: () {},
+                onPressed: widget.onPressedExperience,
               ),
               horizontalSpace(40.h),
               TextButtonCustom(
                 label: 'Work',
-                onPressed: () {},
+                onPressed: widget.onPressedWork,
               ),
               horizontalSpace(40.h),
               TextButtonCustom(
                 label: 'Contact',
-                onPressed: () {},
+                onPressed: widget.onPressedContact,
               ),
               horizontalSpace(40.h),
               ButtonPrimary(
