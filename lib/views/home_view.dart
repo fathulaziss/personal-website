@@ -6,6 +6,7 @@ import 'package:personal_website/widgets/buttons/floating_left_button.dart';
 import 'package:personal_website/widgets/buttons/floating_right_button.dart';
 import 'package:personal_website/widgets/others/about.dart';
 import 'package:personal_website/widgets/others/appbar_custom.dart';
+import 'package:personal_website/widgets/others/contact.dart';
 import 'package:personal_website/widgets/others/drawer_custom.dart';
 import 'package:personal_website/widgets/others/experience.dart';
 import 'package:personal_website/widgets/others/general_introduction.dart';
@@ -36,6 +37,7 @@ class HomeView extends StatelessWidget {
                   const Experience(),
                   const Project(),
                   const ProjectOther(),
+                  const Contact(),
                   verticalSpace(10.h)
                 ],
               ),
