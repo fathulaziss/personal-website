@@ -5,16 +5,15 @@ import 'package:personal_website/styles/styles.dart';
 import 'package:personal_website/utils/app_utils.dart';
 import 'package:personal_website/widgets/buttons/icon_button_custom.dart';
 
-class FloatingLeftButton extends StatelessWidget {
-  const FloatingLeftButton({Key? key}) : super(key: key);
+class Footer extends StatelessWidget {
+  const Footer({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Positioned(
-      bottom: 0,
-      child: Padding(
-        padding: EdgeInsets.only(left: 65.h),
-        child: Column(
+    return Column(
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             IconButtonCustom(
               isCustomIcon: true,
@@ -26,7 +25,7 @@ class FloatingLeftButton extends StatelessWidget {
                 );
               },
             ),
-            verticalSpace(40.h),
+            horizontalSpace(40.h),
             IconButtonCustom(
               isCustomIcon: true,
               customIcon: 'ic_github.png',
@@ -35,7 +34,7 @@ class FloatingLeftButton extends StatelessWidget {
                 AppUtils.openLink('https://github.com/fathulaziss');
               },
             ),
-            verticalSpace(40.h),
+            horizontalSpace(40.h),
             IconButtonCustom(
               isCustomIcon: true,
               customIcon: 'ic_linkedin.png',
@@ -44,7 +43,7 @@ class FloatingLeftButton extends StatelessWidget {
                 AppUtils.openLink('https://www.linkedin.com/in/fathulaziss');
               },
             ),
-            verticalSpace(40.h),
+            horizontalSpace(40.h),
             IconButtonCustom(
               isCustomIcon: true,
               customIcon: 'ic_instagram.png',
@@ -53,15 +52,16 @@ class FloatingLeftButton extends StatelessWidget {
                 AppUtils.openLink('https://www.instagram.com/fathlazis');
               },
             ),
-            verticalSpace(40.h),
-            Container(
-              width: 2.h,
-              height: 120.h,
-              color: AppColor.textColor2,
-            ),
           ],
         ),
-      ),
+        verticalSpace(40.h),
+        Text(
+          'Build by Muhamad Fathul Azis\nwith Flutter Web',
+          style: TextStyles.firaCodeText.copyWith(color: AppColor.textColor2),
+          textAlign: TextAlign.center,
+        ),
+        verticalSpace(MediaQuery.of(context).size.height / 6),
+      ],
     );
   }
 }
