@@ -50,7 +50,7 @@ class FloatingLeftButton extends StatelessWidget {
               customIcon: 'ic_instagram.png',
               iconSize: 30.h,
               onPressed: () {
-                AppUtils.openLink('https://www.instagram.com/fathlazis');
+                AppUtils.openLink('https://www.instagram.com/fathdotdev/');
               },
             ),
             verticalSpace(40.h),

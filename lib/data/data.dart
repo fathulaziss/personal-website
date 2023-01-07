@@ -9,7 +9,7 @@ const List<ExperienceModel> listExperience = [
     companyName: 'PT. Ihsan Solusi Informatika',
     duration: 'Mar 2021 - Present',
     experiences: [
-      'Worked with teams of UI/UX Designer and Back-End Developer to build an E-Wallet App and Mobile Banking App for variety of clients.',
+      '•	Work with a team of UI/UX Designer and Back-End Developer to build E-Wallet Apps and Mobile Banking Apps for various clients.',
       'Write, maintainable code with implemented clean architecture in every project, and also supervisioned by senior engineer to write good code.',
       'Communicate with multi-disciplinary teams of engineers, designers, project managers, and clients on a daily basis.',
     ],
