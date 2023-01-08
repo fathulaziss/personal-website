@@ -48,7 +48,7 @@ class _AboutDetailDescState extends State<AboutDetailDesc> {
               decorationColor: AppColor.primaryColor,
             ),
           ),
-          const TextSpan(text: ' for a variety of clients.'),
+          const TextSpan(text: ' for various clients.'),
         ],
       ),
     );

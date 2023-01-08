@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:personal_website/styles/colors.dart';
 import 'package:personal_website/styles/styles.dart';
+import 'package:personal_website/utils/app_utils.dart';
 import 'package:personal_website/widgets/buttons/primary_button.dart';
 
 class Contact extends StatelessWidget {
@@ -44,6 +45,11 @@ class Contact extends StatelessWidget {
           color: Colors.transparent,
           outlineColor: AppColor.primaryColor,
           radius: 5.h,
+          onTap: () {
+            AppUtils.launcher(
+              Uri(scheme: 'mailto', path: 'azisfathl@gmail.com'),
+            );
+          },
         ),
         verticalSpace(MediaQuery.of(context).size.height / 6),
       ],

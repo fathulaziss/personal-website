@@ -46,7 +46,7 @@ class ProjectOther extends StatelessWidget {
           itemCount: listProjectOther.length,
           itemBuilder: (context, index) {
             return ProjectItem(
-              data: listProject[index],
+              data: listProjectOther[index],
               isShowAppStore: false,
               isShowGithub: true,
               isShowAssociated: false,
