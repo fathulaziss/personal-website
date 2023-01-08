@@ -113,7 +113,6 @@ class _ProjectItemState extends State<ProjectItem> {
                     ),
                     onPressed: () {},
                   ),
-                  verticalSpace(20.h),
                   Text(
                     widget.data.projectDesc,
                     style: TextStyles.heeboText

@@ -30,7 +30,7 @@ class Contact extends StatelessWidget {
                   horizontal: MediaQuery.of(context).size.width / 5,
                 ),
           child: Text(
-            "Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+            "Although currently I'm not looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
             style: TextStyles.heeboText
                 .copyWith(fontSize: 20.h, color: AppColor.textColor2),
             textAlign: TextAlign.center,

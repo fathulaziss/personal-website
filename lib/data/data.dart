@@ -5,7 +5,7 @@ const List listTechnologies = [
   'Flutter',
   'Git',
   'Firebase',
-  'REST-API',
+  'Rest-Api',
   'Figma',
   'Postman'
 ];
@@ -36,7 +36,7 @@ const List<ProjectModel> listProject = [
       'appstore': 'https://apps.apple.com/id/app/pospay/id1542001621',
       'github': '',
     },
-    projectTitle: 'Pospay',
+    projectTitle: 'Pospay     ',
   ),
   ProjectModel(
     companyLink: 'https://ihsansolusi.co.id/m/#home',
@@ -89,18 +89,18 @@ const List<ProjectModel> listProjectOther = [
       'appstore': '',
       'github': 'https://github.com/fathulaziss/airpedia',
     },
-    projectTitle: 'Airpedia',
+    projectTitle: 'Airpedia     ',
   ),
   ProjectModel(
     companyName: 'Self Employee',
     projectDesc:
-        'Building a Digital Library Application for Dinas Perpustakaan dan Kearsipan Banyuwangi Indonesia using Flutter',
+        'Building a Digital Library Application for Dinas Perpustakaan dan Kearsipan Banyuwangi Indonesia using Flutter.',
     projectLink: {
       'playstore': 'https://play.google.com/store/apps/details?id=com.dispusip',
       'appstore': '',
       'github': 'https://github.com/fathulaziss/dispusip',
     },
-    projectTitle: 'DISPUSIPBWI Mobile',
+    projectTitle: 'Dispusip Mobile',
   ),
   ProjectModel(
     companyName: 'Self Employee',
@@ -111,6 +111,6 @@ const List<ProjectModel> listProjectOther = [
       'appstore': '',
       'github': 'https://github.com/fathulaziss/flutter-movie-tickets-app',
     },
-    projectTitle: 'FLUTIX',
+    projectTitle: 'Flutix           ',
   ),
 ];

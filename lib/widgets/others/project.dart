@@ -16,7 +16,7 @@ class Project extends StatelessWidget {
         Row(
           children: [
             Text(
-              "Some Things I've Built",
+              "Some Things I've Build",
               style: TextStyles.heeboText.copyWith(
                 fontSize: MediaQuery.of(context).size.width < 960 ? 30.h : 40.h,
                 color: AppColor.textColor1,

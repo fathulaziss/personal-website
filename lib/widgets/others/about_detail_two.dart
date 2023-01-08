@@ -20,7 +20,7 @@ class AboutDetailTwo extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Hello! My name is Azis and I'm an Flutter enthusiast. My Interest in mobile application development started back in 2020 when my last year on college know Flutter and dicided to focus with it for started my career as mobile application developer.",
+                "Hello! My name is Azis and I'm a Flutter enthusiast. My Interest in mobile application development started back in 2020 when my last year on college know Flutter and dicided to focus with it for started my career as mobile application developer.",
                 style: TextStyles.heeboText
                     .copyWith(fontSize: 20.h, color: AppColor.textColor2),
               ),
