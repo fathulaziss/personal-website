@@ -40,9 +40,8 @@ class _AppBarCustomState extends State<AppBarCustom> {
       leading: Container(
         margin: EdgeInsets.only(left: 40.h),
         decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage(AppAsset.image('img_profile.jpeg')),
-          ),
+          image:
+              DecorationImage(image: AssetImage(AppAsset.logo('logo_app.png'))),
           shape: BoxShape.circle,
         ),
       ),
