@@ -90,7 +90,7 @@ class _AppBarCustomState extends State<AppBarCustom> {
                 radius: 5.h,
                 onTap: () {
                   AppUtils.openLink(
-                    'https://drive.google.com/file/d/1UKZSFqGNUAhvdTuSfI_G_BIzU7v4224P/view?usp=share_link',
+                    'https://drive.google.com/file/d/1TrUtOx1GR8JxzMFN5-a-hfwE4uGZHd2f/view?usp=share_link',
                   );
                 },
               ),

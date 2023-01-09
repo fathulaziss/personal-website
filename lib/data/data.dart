@@ -5,7 +5,7 @@ const List listTechnologies = [
   'Flutter',
   'Git',
   'Firebase',
-  'Rest-Api',
+  'Rest-API',
   'Figma',
   'Postman'
 ];

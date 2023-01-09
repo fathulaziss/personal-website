@@ -20,7 +20,7 @@ class _AboutDetailDescState extends State<AboutDetailDesc> {
     return RichText(
       text: TextSpan(
         text:
-            "Fast-forward to today, and I've got my first job as mobile application developer at an information technology services and consulting company. My main focus these days is develop mobile application, and maintenance code at ",
+            "Fast-forward to today, and I've got my first job as mobile application developer at information technology services and consulting company. My main focus these days is develop mobile application, and maintenance code at ",
         style: TextStyles.heeboText
             .copyWith(fontSize: 20.h, color: AppColor.textColor2),
         children: [
