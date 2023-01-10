@@ -85,7 +85,7 @@ const List<ProjectModel> listProjectOther = [
     projectDesc: 'Building a Booking Airline Ticket Application using Flutter.',
     projectLink: {
       'playstore':
-          'https://play.google.com/store/apps/details?id=com.posindonesia.giropos',
+          'https://play.google.com/store/apps/details?id=com.fathdotdev.airpedia',
       'appstore': '',
       'github': 'https://github.com/fathulaziss/airpedia',
     },
