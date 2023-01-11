@@ -1,14 +1,9 @@
 import 'package:personal_website/models/experience_model.dart';
 import 'package:personal_website/models/project_model.dart';
 
-const List listTechnologies = [
-  'Flutter',
-  'Git',
-  'Firebase',
-  'Rest-API',
-  'Figma',
-  'Postman'
-];
+const List listTechnologies1 = ['Flutter', 'Git', 'Firebase'];
+
+const List listTechnologies2 = ['Rest-API', 'Figma', 'Postman'];
 
 const List<ExperienceModel> listExperience = [
   ExperienceModel(

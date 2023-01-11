@@ -48,42 +48,61 @@ class About extends StatelessWidget {
             const AboutDetailTwo()
           else
             const AboutDetailOne(),
-          Padding(
-            padding: MediaQuery.of(context).size.width < 960
-                ? EdgeInsets.zero
-                : EdgeInsets.only(right: MediaQuery.of(context).size.width / 3),
-            child: GridView.builder(
-              physics: const NeverScrollableScrollPhysics(),
-              padding: EdgeInsets.zero,
-              shrinkWrap: true,
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,
-                childAspectRatio: 10.h,
-                crossAxisSpacing: 20.h,
+          verticalSpace(20.h),
+          Row(
+            children: [
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  ...listTechnologies1.map((e) {
+                    return Padding(
+                      padding: EdgeInsets.only(bottom: 4.h),
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.keyboard_double_arrow_right_rounded,
+                            color: AppColor.primaryColor,
+                            size: 20.h,
+                          ),
+                          horizontalSpace(15.h),
+                          Text(
+                            e,
+                            style: TextStyles.firaCodeText
+                                .copyWith(color: AppColor.textColor2),
+                          ),
+                        ],
+                      ),
+                    );
+                  })
+                ],
               ),
-              itemCount: listTechnologies.length,
-              itemBuilder: (context, index) {
-                return SizedBox(
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.keyboard_double_arrow_right_rounded,
-                        color: AppColor.primaryColor,
-                        size: 20.h,
+              horizontalSpace(60.w),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  ...listTechnologies2.map((e) {
+                    return Padding(
+                      padding: EdgeInsets.only(bottom: 4.h),
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.keyboard_double_arrow_right_rounded,
+                            color: AppColor.primaryColor,
+                            size: 20.h,
+                          ),
+                          horizontalSpace(15.h),
+                          Text(
+                            e,
+                            style: TextStyles.firaCodeText
+                                .copyWith(color: AppColor.textColor2),
+                          ),
+                        ],
                       ),
-                      horizontalSpace(15.h),
-                      Expanded(
-                        child: Text(
-                          listTechnologies[index],
-                          style: TextStyles.firaCodeText
-                              .copyWith(color: AppColor.textColor2),
-                        ),
-                      ),
-                    ],
-                  ),
-                );
-              },
-            ),
+                    );
+                  })
+                ],
+              ),
+            ],
           ),
           verticalSpace(MediaQuery.of(context).size.height / 6),
         ],
