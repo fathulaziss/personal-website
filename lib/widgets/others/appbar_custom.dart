@@ -43,7 +43,6 @@ class _AppBarCustomState extends State<AppBarCustom> {
         decoration: BoxDecoration(
           image:
               DecorationImage(image: AssetImage(AppAsset.logo('logo_app.png'))),
-          shape: BoxShape.circle,
         ),
       ),
       actions: MediaQuery.of(context).size.width < 960
