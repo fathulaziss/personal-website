@@ -13,48 +13,51 @@ class Footer extends StatelessWidget {
     return Column(
       children: [
         verticalSpace(MediaQuery.of(context).size.height / 12),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            IconButtonCustom(
-              isCustomIcon: true,
-              customIcon: 'ic_playstore.png',
-              iconSize: 30.h,
-              onPressed: () {
-                AppUtils.openLink(
-                  'https://play.google.com/store/apps/dev?id=8324269179567170757',
-                );
-              },
-            ),
-            horizontalSpace(40.h),
-            IconButtonCustom(
-              isCustomIcon: true,
-              customIcon: 'ic_github.png',
-              iconSize: 30.h,
-              onPressed: () {
-                AppUtils.openLink('https://github.com/fathulaziss');
-              },
-            ),
-            horizontalSpace(40.h),
-            IconButtonCustom(
-              isCustomIcon: true,
-              customIcon: 'ic_linkedin.png',
-              iconSize: 30.h,
-              onPressed: () {
-                AppUtils.openLink('https://www.linkedin.com/in/fathulaziss');
-              },
-            ),
-            horizontalSpace(40.h),
-            IconButtonCustom(
-              isCustomIcon: true,
-              customIcon: 'ic_instagram.png',
-              iconSize: 30.h,
-              onPressed: () {
-                AppUtils.openLink('https://www.instagram.com/fathdotdev');
-              },
-            ),
-          ],
-        ),
+        if (MediaQuery.of(context).size.width < 960)
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              IconButtonCustom(
+                isCustomIcon: true,
+                customIcon: 'ic_playstore.png',
+                iconSize: 30.h,
+                onPressed: () {
+                  AppUtils.openLink(
+                    'https://play.google.com/store/apps/dev?id=8324269179567170757',
+                  );
+                },
+              ),
+              horizontalSpace(40.h),
+              IconButtonCustom(
+                isCustomIcon: true,
+                customIcon: 'ic_github.png',
+                iconSize: 30.h,
+                onPressed: () {
+                  AppUtils.openLink('https://github.com/fathulaziss');
+                },
+              ),
+              horizontalSpace(40.h),
+              IconButtonCustom(
+                isCustomIcon: true,
+                customIcon: 'ic_linkedin.png',
+                iconSize: 30.h,
+                onPressed: () {
+                  AppUtils.openLink('https://www.linkedin.com/in/fathulaziss');
+                },
+              ),
+              horizontalSpace(40.h),
+              IconButtonCustom(
+                isCustomIcon: true,
+                customIcon: 'ic_instagram.png',
+                iconSize: 30.h,
+                onPressed: () {
+                  AppUtils.openLink('https://www.instagram.com/fathdotdev');
+                },
+              ),
+            ],
+          )
+        else
+          const SizedBox(),
         verticalSpace(40.h),
         Text(
           'Build by Muhamad Fathul Azis\nwith Flutter Web',
