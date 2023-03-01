@@ -12,8 +12,9 @@ const List<ExperienceModel> listExperience = [
     duration: 'Mar 2021 - Present',
     experiences: [
       'Work with a team of UI/UX Designer and Back-End Developer to build E-Wallet Apps and Mobile Banking Apps for various clients.',
-      'Write, maintainable code with implemented clean architecture in every project, and also supervisioned by senior engineer to write good code.',
+      'Write, maintain code with implemented clean architecture in every project, and also supervisioned by senior engineer to write good code.',
       'Communicate with multi-disciplinary teams of engineers, designers, project managers, and clients on a daily basis.',
+      'Fix bugs and ensuring the application can used properly when released.'
     ],
     position: 'Mobile Application Developer',
   )
@@ -24,7 +25,7 @@ const List<ProjectModel> listProject = [
     companyLink: 'https://ihsansolusi.co.id/m/#home',
     companyName: 'PT. Ihsan Solusi Informatika',
     projectDesc:
-        'Building a E-Wallet Application to provide financial services with Flutter for Android and iOS.',
+        'Build a E-Wallet Application to provide financial services with Flutter for Android and iOS.',
     projectLink: {
       'playstore':
           'https://play.google.com/store/apps/details?id=com.posindonesia.giropos',
@@ -37,7 +38,7 @@ const List<ProjectModel> listProject = [
     companyLink: 'https://ihsansolusi.co.id/m/#home',
     companyName: 'PT. Ihsan Solusi Informatika',
     projectDesc:
-        'Building a Mobile Banking Application to provide financial services with Flutter for Android and iOS.',
+        'Build a Mobile Banking Application to provide financial services with Flutter for Android and iOS.',
     projectLink: {
       'playstore':
           'https://play.google.com/store/apps/details?id=com.megasyariah',
@@ -50,7 +51,7 @@ const List<ProjectModel> listProject = [
     companyLink: 'https://ihsansolusi.co.id/m/#home',
     companyName: 'PT. Ihsan Solusi Informatika',
     projectDesc:
-        'Building a Mobile Banking Application to provide financial services with Flutter for Android and iOS.',
+        'Build a Mobile Banking Application to provide financial services with Flutter for Android and iOS.',
     projectLink: {
       'playstore':
           'https://play.google.com/store/apps/details?id=com.mobilemaslahah',
@@ -63,7 +64,7 @@ const List<ProjectModel> listProject = [
     companyLink: 'https://ihsansolusi.co.id/m/#home',
     companyName: 'PT. Ihsan Solusi Informatika',
     projectDesc:
-        'Building a E-Wallet Application to provide financial services with Flutter for Android and iOS.',
+        'Build a E-Wallet Application to provide financial services with Flutter for Android and iOS.',
     projectLink: {
       'playstore':
           'https://play.google.com/store/apps/details?id=com.asiapelangi.autopay.wallet',
@@ -77,7 +78,8 @@ const List<ProjectModel> listProject = [
 const List<ProjectModel> listProjectOther = [
   ProjectModel(
     companyName: 'Self Employee',
-    projectDesc: 'Building a Booking Airline Ticket Application using Flutter.',
+    projectDesc:
+        'Build a Airline Ticket Booking application using Flutter with implement GetX state management. This application using Firebase for user and database authentication, and there are already multilingual features in English and Indonesian.',
     projectLink: {
       'playstore':
           'https://play.google.com/store/apps/details?id=com.fathdotdev.airpedia',
@@ -89,7 +91,7 @@ const List<ProjectModel> listProjectOther = [
   ProjectModel(
     companyName: 'Self Employee',
     projectDesc:
-        'Building a Digital Library Application for Dinas Perpustakaan dan Kearsipan Banyuwangi Indonesia using Flutter.',
+        'Build a Banyuwangi Library Service Information System for mobile application to facilitate librarians such as getting latest news or searching for some books. This application develop using Flutter with implement GetX state management, integration Rest-API, and using Firebase for push notification feature.',
     projectLink: {
       'playstore': 'https://play.google.com/store/apps/details?id=com.dispusip',
       'appstore': '',
@@ -99,12 +101,13 @@ const List<ProjectModel> listProjectOther = [
   ),
   ProjectModel(
     companyName: 'Self Employee',
-    projectDesc: 'Building a Booking Cinema Ticket Application using Flutter.',
+    projectDesc:
+        'Build a Cinema Ticket Booking application using Flutter with implement GetX state management. This application using Firebase for user and database authentication, integration Rest-API from open API themoviedb to getting movie data, and there are already multilingual features in English and Indonesian.',
     projectLink: {
       'playstore':
-          'https://play.google.com/store/apps/details?id=com.damarion.flutter_movie_tickets',
+          'https://play.google.com/store/apps/details?id=com.fathdotdev.flutix',
       'appstore': '',
-      'github': 'https://github.com/fathulaziss/flutter-movie-tickets-app',
+      'github': 'https://github.com/fathulaziss/flutix-getx',
     },
     projectTitle: 'Flutix           ',
   ),
