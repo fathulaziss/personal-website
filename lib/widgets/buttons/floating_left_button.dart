@@ -54,6 +54,15 @@ class FloatingLeftButton extends StatelessWidget {
               },
             ),
             verticalSpace(40.h),
+            IconButtonCustom(
+              isCustomIcon: true,
+              customIcon: 'ic_youtube.png',
+              iconSize: 30.h,
+              onPressed: () {
+                AppUtils.openLink('https://www.youtube.com/@fathdotdev');
+              },
+            ),
+            verticalSpace(40.h),
             Container(
               width: 2.h,
               height: 120.h,

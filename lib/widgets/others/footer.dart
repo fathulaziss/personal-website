@@ -54,6 +54,15 @@ class Footer extends StatelessWidget {
                   AppUtils.openLink('https://www.instagram.com/fathdotdev');
                 },
               ),
+              horizontalSpace(40.h),
+              IconButtonCustom(
+                isCustomIcon: true,
+                customIcon: 'ic_youtube.png',
+                iconSize: 30.h,
+                onPressed: () {
+                  AppUtils.openLink('https://www.youtube.com/@fathdotdev');
+                },
+              ),
             ],
           )
         else
