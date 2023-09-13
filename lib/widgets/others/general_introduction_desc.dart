@@ -21,14 +21,14 @@ class _GeneralIntroductionDescState extends State<GeneralIntroductionDesc> {
     return RichText(
       text: TextSpan(
         text:
-            "I'm a software engineer specializing develop mobile application using Flutter. Currently, I'm focused on develop mobile application at ",
+            "I'm a software engineer with experience as mobile developer. Currently, I'm focused on develop mobile application at ",
         style: TextStyles.heeboText
             .copyWith(fontSize: 20.h, color: AppColor.textColor2),
         children: [
           TextSpan(
             recognizer: TapGestureRecognizer()
               ..onTap = () {
-                AppUtils.openLink('https://ihsansolusi.co.id/m/#home');
+                AppUtils.openLink('https://www.anj-group.com/en/home');
               },
             mouseCursor: MaterialStateMouseCursor.clickable,
             onEnter: (event) {
@@ -41,7 +41,7 @@ class _GeneralIntroductionDescState extends State<GeneralIntroductionDesc> {
                 decoration = TextDecoration.none;
               });
             },
-            text: 'PT. Ihsan Solusi Informatika',
+            text: 'PT. Austindo Nusantara Jaya Tbk',
             style: TextStyles.heeboText.copyWith(
               fontSize: 20.h,
               color: AppColor.primaryColor,

@@ -9,12 +9,23 @@ const List<ExperienceModel> listExperience = [
   ExperienceModel(
     companyLink: 'https://ihsansolusi.co.id/m/#home',
     companyName: 'PT. Ihsan Solusi Informatika',
-    duration: 'Mar 2021 - Present',
+    duration: 'Mar 2021 - Mei 2023',
     experiences: [
       'Work with a team of UI/UX Designer and Back-End Developer to build E-Wallet Apps and Mobile Banking Apps for various clients.',
       'Write, maintain code with implemented clean architecture in every project, and also supervisioned by senior engineer to write good code.',
       'Communicate with multi-disciplinary teams of engineers, designers, project managers, and clients on a daily basis.',
       'Fix bugs and ensuring the application can used properly when released.'
+    ],
+    position: 'Mobile Application Developer',
+  ),
+  ExperienceModel(
+    companyLink: 'https://www.anj-group.com/en/home',
+    companyName: 'PT. Austindo Nusantara Jaya Tbk',
+    duration: 'Mei 2023 - Present',
+    experiences: [
+      'Work with team of IT Application Department to digitilization existing bussines process or create new application to help administration company.',
+      'Refactoring existing project mobile apps to implemented clean architecture for easier to read, maintainable, and scalable for future.',
+      'Support users at various subsidiary with fix bug on mobile application.'
     ],
     position: 'Mobile Application Developer',
   )
