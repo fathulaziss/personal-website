@@ -6,7 +6,7 @@ import 'package:personal_website/utils/app_utils.dart';
 import 'package:personal_website/widgets/buttons/icon_button_custom.dart';
 
 class Footer extends StatelessWidget {
-  const Footer({Key? key}) : super(key: key);
+  const Footer({super.key});
 
   @override
   Widget build(BuildContext context) {

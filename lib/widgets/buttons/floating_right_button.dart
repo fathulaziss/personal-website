@@ -6,7 +6,7 @@ import 'package:personal_website/utils/app_utils.dart';
 import 'package:personal_website/widgets/buttons/text_button_custom.dart';
 
 class FloatingRightButton extends StatelessWidget {
-  const FloatingRightButton({Key? key}) : super(key: key);
+  const FloatingRightButton({super.key});
 
   @override
   Widget build(BuildContext context) {

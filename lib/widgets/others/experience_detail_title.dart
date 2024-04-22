@@ -6,11 +6,11 @@ import 'package:personal_website/widgets/buttons/text_button_custom.dart';
 
 class ExperienceDetailTitle extends StatelessWidget {
   const ExperienceDetailTitle({
-    Key? key,
+    super.key,
     required this.onTap,
     required this.selectedIndex,
     required this.index,
-  }) : super(key: key);
+  });
 
   final Function() onTap;
   final int selectedIndex;

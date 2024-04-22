@@ -7,7 +7,7 @@ import 'package:personal_website/widgets/buttons/text_button_custom.dart';
 import 'package:personal_website/widgets/others/project_item.dart';
 
 class ProjectOther extends StatelessWidget {
-  const ProjectOther({Key? key}) : super(key: key);
+  const ProjectOther({super.key});
 
   @override
   Widget build(BuildContext context) {

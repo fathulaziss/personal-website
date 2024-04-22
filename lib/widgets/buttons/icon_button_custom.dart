@@ -5,7 +5,7 @@ import 'package:personal_website/utils/app_asset.dart';
 
 class IconButtonCustom extends StatefulWidget {
   const IconButtonCustom({
-    Key? key,
+    super.key,
     this.icon,
     required this.onPressed,
     this.iconSize,
@@ -13,7 +13,7 @@ class IconButtonCustom extends StatefulWidget {
     this.padding,
     this.isCustomIcon = false,
     this.customIcon = '',
-  }) : super(key: key);
+  });
 
   final IconData? icon;
   final Function() onPressed;

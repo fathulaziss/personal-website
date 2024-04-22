@@ -6,7 +6,7 @@ import 'package:personal_website/styles/styles.dart';
 import 'package:personal_website/utils/app_utils.dart';
 
 class GeneralIntroductionDesc extends StatefulWidget {
-  const GeneralIntroductionDesc({Key? key}) : super(key: key);
+  const GeneralIntroductionDesc({super.key});
 
   @override
   State<GeneralIntroductionDesc> createState() =>

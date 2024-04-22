@@ -6,11 +6,11 @@ import 'package:personal_website/styles/styles.dart';
 
 class ExperienceTitle extends StatefulWidget {
   const ExperienceTitle({
-    Key? key,
+    super.key,
     required this.companyName,
     required this.onTap,
     required this.position,
-  }) : super(key: key);
+  });
 
   final String companyName;
   final Function() onTap;

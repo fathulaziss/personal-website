@@ -9,26 +9,26 @@ const List<ExperienceModel> listExperience = [
   ExperienceModel(
     companyLink: 'https://ihsansolusi.co.id/m/#home',
     companyName: 'PT. Ihsan Solusi Informatika',
-    duration: 'Mar 2021 - Mei 2023',
+    duration: 'March 2021 - May 2023',
     experiences: [
-      'Work with a team of UI/UX Designer and Back-End Developer to build E-Wallet Apps and Mobile Banking Apps for various clients.',
-      'Write, maintain code with implemented clean architecture in every project, and also supervisioned by senior engineer to write good code.',
+      'Work with a team of UI/UX designers and back-end developers to create E-Wallet and Mobile Banking applications for a variety of clients.',
+      'Write and maintain code with a clean architecture in every project, while also being supervised by a senior engineer to write quality code.',
       'Communicate with multi-disciplinary teams of engineers, designers, project managers, and clients on a daily basis.',
-      'Fix bugs and ensuring the application can used properly when released.'
+      'Fix issues and ensure the application can be used correctly when released.',
     ],
     position: 'Mobile Application Developer',
   ),
   ExperienceModel(
     companyLink: 'https://www.anj-group.com/en/home',
     companyName: 'PT. Austindo Nusantara Jaya Tbk',
-    duration: 'Mei 2023 - Present',
+    duration: 'May 2023 - Present',
     experiences: [
-      'Work with team of IT Application Department to digitilization existing bussines process or create new application to help administration company.',
-      'Refactoring existing project mobile apps to implemented clean architecture for easier to read, maintainable, and scalable for future.',
-      'Support users at various subsidiary with fix bug on mobile application.'
+      'Work with the IT Application Department team to digitize existing business process and develop applications to assist the administrative organization.',
+      'Refactoring existing project mobile apps with clean architecture makes them more understandable, manageable, and scalable.',
+      'Support users at multiple subsidiaries by bug fixing in mobile applications.',
     ],
     position: 'Mobile Application Developer',
-  )
+  ),
 ];
 
 const List<ProjectModel> listProject = [

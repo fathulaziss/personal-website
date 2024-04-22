@@ -10,13 +10,13 @@ import 'package:personal_website/widgets/buttons/text_button_custom.dart';
 
 class ProjectItem extends StatefulWidget {
   const ProjectItem({
-    Key? key,
+    super.key,
     required this.data,
     this.isShowAppStore = true,
     this.isShowGithub = false,
     this.isShowPlaystore = true,
     this.isShowAssociated = true,
-  }) : super(key: key);
+  });
 
   final ProjectModel data;
   final bool isShowPlaystore;
@@ -93,7 +93,7 @@ class _ProjectItemState extends State<ProjectItem> {
                             );
                           },
                         ),
-                      )
+                      ),
                   ],
                 ),
               ),

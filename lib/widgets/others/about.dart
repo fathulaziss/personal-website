@@ -7,7 +7,7 @@ import 'package:personal_website/widgets/others/about_detail_one.dart';
 import 'package:personal_website/widgets/others/about_detail_two.dart';
 
 class About extends StatelessWidget {
-  const About({Key? key}) : super(key: key);
+  const About({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -73,7 +73,7 @@ class About extends StatelessWidget {
                         ],
                       ),
                     );
-                  })
+                  }),
                 ],
               ),
               horizontalSpace(60.w),
@@ -99,7 +99,7 @@ class About extends StatelessWidget {
                         ],
                       ),
                     );
-                  })
+                  }),
                 ],
               ),
             ],

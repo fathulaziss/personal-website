@@ -8,12 +8,12 @@ import 'package:personal_website/widgets/buttons/text_button_custom.dart';
 
 class DrawerCustom extends StatelessWidget {
   const DrawerCustom({
-    Key? key,
+    super.key,
     required this.onPressedAbout,
     required this.onPressedContact,
     required this.onPressedExperience,
     required this.onPressedWork,
-  }) : super(key: key);
+  });
 
   final Function() onPressedAbout;
   final Function() onPressedExperience;
@@ -63,7 +63,7 @@ class DrawerCustom extends StatelessWidget {
             onTap: () {
               Navigator.pop(context);
               AppUtils.openLink(
-                'https://drive.google.com/file/d/1b7z3FZX9OxUZ2hrb3tEFt49C1mhD2qR-/view?usp=share_link',
+                'https://drive.google.com/file/d/1ETI-E3kGbj3njXVY0C_IzxD_tlqYymK8/view?usp=drive_link',
               );
             },
             width: 90.h,
@@ -79,7 +79,7 @@ class DrawerCustom extends StatelessWidget {
               Navigator.pop(context);
             },
             icon: const Icon(Icons.close, color: AppColor.primaryColor),
-          )
+          ),
         ],
       ),
     );

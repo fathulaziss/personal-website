@@ -7,10 +7,7 @@ import 'package:personal_website/utils/app_utils.dart';
 import 'package:personal_website/widgets/others/experience_title.dart';
 
 class ExperienceDetailDesc extends StatelessWidget {
-  const ExperienceDetailDesc({
-    Key? key,
-    required this.selectedIndex,
-  }) : super(key: key);
+  const ExperienceDetailDesc({super.key, required this.selectedIndex});
 
   final int selectedIndex;
 
@@ -68,7 +65,7 @@ class ExperienceDetailDesc extends StatelessWidget {
                   );
                 },
               ),
-            )
+            ),
           ],
         ),
       ),

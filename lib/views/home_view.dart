@@ -15,7 +15,7 @@ import 'package:personal_website/widgets/others/project_other.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 class HomeView extends StatefulWidget {
-  const HomeView({Key? key}) : super(key: key);
+  const HomeView({super.key});
 
   @override
   State<HomeView> createState() => _HomeViewState();

@@ -4,7 +4,7 @@ import 'package:personal_website/styles/colors.dart';
 import 'package:personal_website/utils/app_asset.dart';
 
 class ProfileCard extends StatelessWidget {
-  const ProfileCard({Key? key}) : super(key: key);
+  const ProfileCard({super.key});
 
   @override
   Widget build(BuildContext context) {

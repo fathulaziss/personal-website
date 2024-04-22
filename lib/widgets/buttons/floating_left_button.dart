@@ -6,7 +6,7 @@ import 'package:personal_website/utils/app_utils.dart';
 import 'package:personal_website/widgets/buttons/icon_button_custom.dart';
 
 class FloatingLeftButton extends StatelessWidget {
-  const FloatingLeftButton({Key? key}) : super(key: key);
+  const FloatingLeftButton({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -11,12 +11,12 @@ import 'package:personal_website/widgets/buttons/text_button_custom.dart';
 
 class AppBarCustom extends StatefulWidget implements PreferredSizeWidget {
   const AppBarCustom({
-    Key? key,
+    super.key,
     required this.onPressedAbout,
     required this.onPressedContact,
     required this.onPressedExperience,
     required this.onPressedWork,
-  }) : super(key: key);
+  });
 
   final Function() onPressedAbout;
   final Function() onPressedExperience;
@@ -57,7 +57,7 @@ class _AppBarCustomState extends State<AppBarCustom> {
                   color: AppColor.primaryColor,
                 ),
               ),
-              horizontalSpace(40.h)
+              horizontalSpace(40.h),
             ]
           : [
               TextButtonCustom(
@@ -89,11 +89,11 @@ class _AppBarCustomState extends State<AppBarCustom> {
                 radius: 5.h,
                 onTap: () {
                   AppUtils.openLink(
-                    'https://drive.google.com/file/d/1b7z3FZX9OxUZ2hrb3tEFt49C1mhD2qR-/view?usp=share_link',
+                    'https://drive.google.com/file/d/1ETI-E3kGbj3njXVY0C_IzxD_tlqYymK8/view?usp=drive_link',
                   );
                 },
               ),
-              horizontalSpace(40.h)
+              horizontalSpace(40.h),
             ],
     );
   }

@@ -4,14 +4,14 @@ import 'package:personal_website/styles/styles.dart';
 
 class TextButtonCustom extends StatefulWidget {
   const TextButtonCustom({
-    Key? key,
+    super.key,
     required this.label,
     required this.onPressed,
     this.isUseOverlayColor = false,
     this.padding,
     this.textColor = AppColor.textColor1,
     this.labelTextStyle,
-  }) : super(key: key);
+  });
 
   final String label;
   final Function() onPressed;

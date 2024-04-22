@@ -5,7 +5,7 @@ import 'package:personal_website/styles/styles.dart';
 import 'package:personal_website/widgets/others/experience_detail.dart';
 
 class Experience extends StatelessWidget {
-  const Experience({Key? key}) : super(key: key);
+  const Experience({super.key});
 
   @override
   Widget build(BuildContext context) {

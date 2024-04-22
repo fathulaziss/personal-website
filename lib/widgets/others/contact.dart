@@ -6,7 +6,7 @@ import 'package:personal_website/utils/app_utils.dart';
 import 'package:personal_website/widgets/buttons/primary_button.dart';
 
 class Contact extends StatelessWidget {
-  const Contact({Key? key}) : super(key: key);
+  const Contact({super.key});
 
   @override
   Widget build(BuildContext context) {

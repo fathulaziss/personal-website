@@ -6,7 +6,7 @@ import 'package:personal_website/widgets/cards/profile_card.dart';
 import 'package:personal_website/widgets/others/about_detail_desc.dart';
 
 class AboutDetailOne extends StatelessWidget {
-  const AboutDetailOne({Key? key}) : super(key: key);
+  const AboutDetailOne({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class AboutDetailOne extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Hello! My name is Azis and I'm a Flutter Enthusiast. My Interest in mobile application development started back in 2020 when my last year at  university learning Flutter and dicided to focus with it for started my career as mobile application developer.",
+                'Hello! My name is Azis, and I am a Flutter enthusiast. My interest in mobile application development began in 2020, when I learned about Flutter during my final year of university and decided to focus on it to start my career as a mobile application developer.',
                 style: TextStyles.heeboText
                     .copyWith(fontSize: 20.h, color: AppColor.textColor2),
               ),
@@ -26,7 +26,7 @@ class AboutDetailOne extends StatelessWidget {
               const AboutDetailDesc(),
               verticalSpace(20.h),
               Text(
-                'I also keep learning about mobile application development especially Flutter on my free time to update my knowledge.',
+                'In my spare time, I also continue to study about mobile application development, specifically Flutter, in order to stay current.',
                 style: TextStyles.heeboText
                     .copyWith(fontSize: 20.h, color: AppColor.textColor2),
               ),

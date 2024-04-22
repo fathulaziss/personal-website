@@ -6,7 +6,7 @@ import 'package:personal_website/widgets/others/experience_detail_desc.dart';
 import 'package:personal_website/widgets/others/experience_detail_title.dart';
 
 class ExperienceDetail extends StatefulWidget {
-  const ExperienceDetail({Key? key}) : super(key: key);
+  const ExperienceDetail({super.key});
 
   @override
   State<ExperienceDetail> createState() => _ExperienceDetailState();

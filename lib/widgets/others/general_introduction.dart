@@ -7,7 +7,7 @@ import 'package:personal_website/widgets/buttons/primary_button.dart';
 import 'package:personal_website/widgets/others/general_introduction_desc.dart';
 
 class GeneralIntroduction extends StatelessWidget {
-  const GeneralIntroduction({Key? key}) : super(key: key);
+  const GeneralIntroduction({super.key});
 
   @override
   Widget build(BuildContext context) {
