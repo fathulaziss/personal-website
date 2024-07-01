@@ -30,7 +30,7 @@ class IconButtonCustom extends StatefulWidget {
 class _IconButtonCustomState extends State<IconButtonCustom> {
   Color hoverColor = AppColor.textColor2;
   bool isHover = false;
-  MaterialStateProperty<Color>? overlayColor;
+  WidgetStateProperty<Color>? overlayColor;
 
   @override
   Widget build(BuildContext context) {
@@ -48,11 +48,11 @@ class _IconButtonCustomState extends State<IconButtonCustom> {
         });
       },
       style: ButtonStyle(
-        padding: MaterialStateProperty.all(widget.padding ?? EdgeInsets.zero),
+        padding: WidgetStateProperty.all(widget.padding ?? EdgeInsets.zero),
         overlayColor: widget.isUseOverlayColor
             ? overlayColor
-            : MaterialStateProperty.all(Colors.transparent),
-        minimumSize: MaterialStateProperty.all(
+            : WidgetStateProperty.all(Colors.transparent),
+        minimumSize: WidgetStateProperty.all(
           Size(widget.iconSize ?? 25.h, widget.iconSize ?? 25.h),
         ),
       ),

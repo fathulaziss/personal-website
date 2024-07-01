@@ -29,7 +29,7 @@ class _AboutDetailDescState extends State<AboutDetailDesc> {
               ..onTap = () {
                 AppUtils.openLink('https://www.anj-group.com/en/home');
               },
-            mouseCursor: MaterialStateMouseCursor.clickable,
+            mouseCursor: WidgetStateMouseCursor.clickable,
             onEnter: (event) {
               setState(() {
                 decoration = TextDecoration.underline;

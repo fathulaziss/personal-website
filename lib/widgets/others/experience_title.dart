@@ -36,7 +36,7 @@ class _ExperienceTitleState extends State<ExperienceTitle> {
           const TextSpan(text: '@ '),
           TextSpan(
             recognizer: TapGestureRecognizer()..onTap = widget.onTap,
-            mouseCursor: MaterialStateMouseCursor.clickable,
+            mouseCursor: WidgetStateMouseCursor.clickable,
             onEnter: (event) {
               setState(() {
                 decoration = TextDecoration.underline;

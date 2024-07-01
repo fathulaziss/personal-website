@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "personal-website-10ae2"
-  }
+    "default": "personal-website-10ae2",
+    "personal-website": "personal-website-10ae2"
+  },
+  "targets": {},
+  "etags": {}
 }

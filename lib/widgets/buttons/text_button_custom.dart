@@ -27,7 +27,7 @@ class TextButtonCustom extends StatefulWidget {
 class _TextButtonCustomState extends State<TextButtonCustom> {
   Color hoverColor = AppColor.textColor1;
   bool isHover = false;
-  MaterialStateProperty<Color>? overlayColor;
+  WidgetStateProperty<Color>? overlayColor;
 
   @override
   Widget build(BuildContext context) {
@@ -45,10 +45,10 @@ class _TextButtonCustomState extends State<TextButtonCustom> {
         });
       },
       style: ButtonStyle(
-        padding: MaterialStateProperty.all(widget.padding ?? EdgeInsets.zero),
+        padding: WidgetStateProperty.all(widget.padding ?? EdgeInsets.zero),
         overlayColor: widget.isUseOverlayColor
             ? overlayColor
-            : MaterialStateProperty.all(Colors.transparent),
+            : WidgetStateProperty.all(Colors.transparent),
       ),
       child: Text(
         widget.label,

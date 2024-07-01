@@ -136,7 +136,7 @@ class _ProjectItemState extends State<ProjectItem> {
                         ..onTap = () {
                           AppUtils.openLink(widget.data.companyLink);
                         },
-                      mouseCursor: MaterialStateMouseCursor.clickable,
+                      mouseCursor: WidgetStateMouseCursor.clickable,
                       onEnter: (event) {
                         setState(() {
                           decoration = TextDecoration.underline;
