@@ -7,13 +7,24 @@
         {
             "name": "personal-website",
             "request": "launch",
-            "type": "dart"
+            "type": "dart",
+            "args": [
+                "-d",
+                "chrome",
+                "--web-browser-flag=--disable-service-worker",
+                "--web-browser-flag=--disable-cache"
+            ]
         },
         {
             "name": "personal-website (profile mode)",
             "request": "launch",
             "type": "dart",
-            "flutterMode": "profile"
+            "flutterMode": "profile",
+            "args": [
+                "-d",
+                "chrome",
+                "--web-browser-flag=--disable-service-worker"
+            ]
         },
         {
             "name": "personal-website (release mode)",
