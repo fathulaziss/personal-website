@@ -1,9 +1,9 @@
 import 'package:personal_website/models/experience_model.dart';
 import 'package:personal_website/models/project_model.dart';
 
-const List listTechnologies1 = ['Flutter', 'Git', 'Firebase'];
+const List listTechnologies1 = ['Flutter', 'Java', 'Kotlin'];
 
-const List listTechnologies2 = ['Rest-API', 'Figma', 'Postman'];
+const List listTechnologies2 = ['JavaScript', 'Rest-API', 'Firebase'];
 
 const List<ExperienceModel> listExperience = [
   ExperienceModel(
@@ -11,7 +11,7 @@ const List<ExperienceModel> listExperience = [
     companyName: 'PT. Ihsan Solusi Informatika',
     duration: 'March 2021 - May 2023',
     experiences: [
-      'Work with a team of UI/UX designers and back-end developers to create E-Wallet and Mobile Banking applications for a variety of clients.',
+      'Work with a team of UI/UX designers and back-end developers to create E-Wallet and Mobile Banking applications using framework Flutter for a variety of clients.',
       'Write and maintain code with a clean architecture in every project, while also being supervised by a senior engineer to write quality code.',
       'Communicate with multi-disciplinary teams of engineers, designers, project managers, and clients on a daily basis.',
       'Fix issues and ensure the application can be used correctly when released.',
@@ -21,11 +21,20 @@ const List<ExperienceModel> listExperience = [
   ExperienceModel(
     companyLink: 'https://www.anj-group.com/en/home',
     companyName: 'PT. Austindo Nusantara Jaya Tbk',
-    duration: 'May 2023 - Present',
+    duration: 'May 2023 - Aug 2024',
     experiences: [
-      'Work with the IT Application Department team to digitize existing business process and develop applications to assist the administrative organization.',
+      'Work with the IT Application Department team to digitize existing business process and develop mobile applications using framework Flutter to assist the administrative organization.',
       'Refactoring existing project mobile apps with clean architecture makes them more understandable, manageable, and scalable.',
-      'Support users at multiple subsidiaries by bug fixing in mobile applications.',
+      'Support users at multiple subsidiaries with bug fixing in mobile applications.',
+    ],
+    position: 'Mobile Application Developer',
+  ),
+  ExperienceModel(
+    companyLink: 'https://ebconnect.com/',
+    companyName: 'PT. EBconnection Indonesia',
+    duration: 'Aug 2024 - Present',
+    experiences: [
+      'Work with team of UI/UX designer and back-end developer to build mobile application using framework Flutter & Android Native (Java/Kotlin)',
     ],
     position: 'Mobile Application Developer',
   ),

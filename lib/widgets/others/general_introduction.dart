@@ -30,7 +30,7 @@ class GeneralIntroduction extends StatelessWidget {
           ),
         ),
         Text(
-          'I build things for the mobile application',
+          'I specialize in mobile app development',
           style: TextStyles.heeboText.copyWith(
             fontSize: MediaQuery.of(context).size.width < 960 ? 40.h : 60.h,
             color: AppColor.textColor2,

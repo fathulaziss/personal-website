@@ -20,7 +20,7 @@ class AboutDetailTwo extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Hello! My name is Azis, and I am a Flutter enthusiast. My interest in mobile application development began in 2020, when I learned about Flutter during my final year of university and decided to focus on it to start my career as a mobile application developer.',
+                'Hello, my name is Azis, and I specialize in mobile application development. My journey began in 2020 when I discovered Flutter during final year at university, and I chose to make it the foundation of my career. It turned out to be the perfect fit for my passion for creating impactful digital solutions.',
                 style: TextStyles.heeboText
                     .copyWith(fontSize: 20.h, color: AppColor.textColor2),
               ),
@@ -28,7 +28,7 @@ class AboutDetailTwo extends StatelessWidget {
               const AboutDetailDesc(),
               verticalSpace(20.h),
               Text(
-                'In my spare time, I also continue to study about mobile application development, specifically Flutter, in order to stay current.',
+                'Beyond coding, I’m committed to continuous learning and professional growth. I stay up to date with the latest trends in software development to refine my skills and deliver high-quality solutions that make a real impact.',
                 style: TextStyles.heeboText
                     .copyWith(fontSize: 20.h, color: AppColor.textColor2),
               ),
